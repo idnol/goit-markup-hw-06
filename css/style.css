@@ -645,11 +645,15 @@ img {
     fill: transparent;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 .modal-form__icon.check {
-    background-color: var(--color-dark-blue);
+    /*background-color: var(--color-dark-blue);*/
     border: none;
     fill: var(--color-white);
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
 }
 .modal-form__link {
     color: var(--text-color-blue);
@@ -670,7 +674,7 @@ img {
     border: none;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-form__checkbox:checked + .modal-form__label-inner {
+.modal-form__checkbox:checked + .modal-form__label.two .modal-form__label-inner {
     background-color: var(--color-dark-blue);
     border: none;
     fill: var(--color-white);
