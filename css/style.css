@@ -234,9 +234,15 @@ img {
     background-color: #4D5AE5;
     border: none;
     border-radius: 4px;
+    transition: background-color 250ms ease-in;
+}
+.footer-form__submit:hover,
+.footer-form__submit:focus {
+    background-color: #31d0aa;
 }
 .footer-form__icon {
     margin-left: 16px;
+    fill: #ffffff;
 }
 .hero {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/banner-bg.jpg);
